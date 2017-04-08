@@ -1,0 +1,154 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    background-color: #fafafa;
+    color: #333;
+}
+
+section {
+    padding: 0 60px;
+}
+
+.underline {
+
+}
+
+.separator {
+    width: 300px;
+    height: 1px;
+    background: firebrick;
+    margin: 60px auto;
+    border: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 60px;
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+.col-3 {
+    box-sizing: border-box;
+    float: left;
+    width: 33.3333%;
+    padding: 0 36px;
+}
+
+.col-3 img {
+    filter: grayscale(1.0);
+    width: 100%;
+    border-radius: 8px;
+}
+
+#jumbotron {
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    position: relative;
+    text-align: center;
+}
+
+#jumbotron #background {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-image: url("images/building.jpg");
+    background-size: cover;
+    background-position-y: 30%;
+    filter: grayscale(1.0) brightness(0.6);
+}
+
+.contact {
+    text-transform: uppercase;
+    padding: 25px;
+    font-size: 21px;
+    font-weight: 300;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+}
+
+.contact:focus, .contact:hover {
+    opacity: 0.7;
+}
+
+#jumbotron .contact {
+    position: relative;
+    top: 50px;
+}
+
+#about {
+    max-width: 960px;
+    margin: auto;
+}
+
+#about .portrait {
+    border-radius: 5px;
+    width: 180px;
+    float: left;
+    margin-right: 60px;
+}
+
+#about p {
+    font-style: italic;
+    padding-top: 50px;
+}
+
+#contact {
+    margin-top: 80px;
+    text-align: center;
+    background: #666;
+    height: 240px;
+}
+
+#contact .contact {
+    position: relative;
+    top: 110px;
+}
+
+footer {
+    background: black;
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 960px) {
+    .col-3 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .col-3 img {
+        max-width: 480px;
+        display: inline-block;
+    }
+}
